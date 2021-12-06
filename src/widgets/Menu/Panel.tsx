@@ -32,12 +32,20 @@ const StyledPanel = styled.div<{ isPushed: boolean; showMenu: boolean }>`
     width: ${({ isPushed }) => `${isPushed ? SIDEBAR_WIDTH_FULL : SIDEBAR_WIDTH_REDUCED}px`};
   }
 `;
-
+const Text = styled.div`
+  text-align: center;
+  font-size: 2rem; 
+  items-align: center;
+  color: #253449;
+`;
 const Panel: React.FC<Props> = (props) => {
   const { isPushed, showMenu } = props;
   return (
     <StyledPanel isPushed={isPushed} showMenu={showMenu}>
-      
+      <Text>
+      <img src="/images/egg/CRONIAN.png" alt="Italian Trulli" />
+      Cronain Swap
+      </Text>
       <PanelBody {...props} />
       <PanelFooter {...props} />
     </StyledPanel>
