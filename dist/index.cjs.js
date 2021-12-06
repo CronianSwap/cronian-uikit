@@ -2449,8 +2449,9 @@ var Panel = function (props) {
     var isPushed = props.isPushed, showMenu = props.showMenu;
     return (React__default['default'].createElement(StyledPanel, { isPushed: isPushed, showMenu: showMenu },
         React__default['default'].createElement(Text$1, null,
-            React__default['default'].createElement("img", { src: "/images/egg/CRONIAN.png", alt: "Italian Trulli" }),
-            "Cronain Swap"),
+            React__default['default'].createElement("img", { src: "/images/egg/CRONIAN_WHITE.png", alt: "Italian Trulli", width: "80", height: "80" })),
+        React__default['default'].createElement(Text$1, null,
+            React__default['default'].createElement("h1", null, "Cronain Swap Protocol")),
         React__default['default'].createElement(PanelBody, __assign({}, props)),
         React__default['default'].createElement(PanelFooter, __assign({}, props))));
 };

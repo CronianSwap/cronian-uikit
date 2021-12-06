@@ -43,8 +43,10 @@ const Panel: React.FC<Props> = (props) => {
   return (
     <StyledPanel isPushed={isPushed} showMenu={showMenu}>
       <Text>
-      <img src="/images/egg/CRONIAN.png" alt="Italian Trulli" />
-      Cronain Swap
+      <img src="/images/egg/CRONIAN_WHITE.png" alt="Italian Trulli" width = "80" height = "80"/>
+      </Text>
+      <Text>
+      <h1>Cronain Swap Protocol</h1>
       </Text>
       <PanelBody {...props} />
       <PanelFooter {...props} />
