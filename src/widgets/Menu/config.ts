@@ -129,11 +129,7 @@ export const socials = [
     icon: "TwitterIcon",
     href: "https://twitter.com/CronianSwap",
   },
-  {
-    label: "Discord",
-    icon: "DiscordIcon",
-    href: "https://discord.gg/rxU2xbPM",
-  },
+
 ];
 
 export const MENU_HEIGHT = 64;

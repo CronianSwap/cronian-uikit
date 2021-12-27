@@ -2236,11 +2236,6 @@ var socials = [
         icon: "TwitterIcon",
         href: "https://twitter.com/CronianSwap",
     },
-    {
-        label: "Discord",
-        icon: "DiscordIcon",
-        href: "https://discord.gg/rxU2xbPM",
-    },
 ];
 var MENU_HEIGHT = 64;
 var MENU_ENTRY_HEIGHT = 48;
