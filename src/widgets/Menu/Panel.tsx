@@ -12,7 +12,7 @@ interface Props extends PanelProps, PushedProps {
 
 const StyledPanel = styled.div<{ isPushed: boolean; showMenu: boolean }>`
   position: fixed;
-  padding-top: ${({ showMenu }) => (showMenu ? "80px" : 0)};
+  padding-top: ${({ showMenu }) => (showMenu ? "60px" : 0)};
   top: 0;
   left: 0;
   display: flex;
@@ -32,22 +32,12 @@ const StyledPanel = styled.div<{ isPushed: boolean; showMenu: boolean }>`
     width: ${({ isPushed }) => `${isPushed ? SIDEBAR_WIDTH_FULL : SIDEBAR_WIDTH_REDUCED}px`};
   }
 `;
-const Text = styled.div`
-  text-align: center;
-  font-size: 2rem; 
-  items-align: center;
-  color: #253449;
-`;
+
 const Panel: React.FC<Props> = (props) => {
   const { isPushed, showMenu } = props;
   return (
     <StyledPanel isPushed={isPushed} showMenu={showMenu}>
-      <Text>
-      <img src="/images/egg/CRONIAN_WHITE.png" alt="Italian Trulli" width = "80" height = "80"/>
-      </Text>
-      <Text>
-      <h1>Cronain Swap Protocol</h1>
-      </Text>
+
       <PanelBody {...props} />
       <PanelFooter {...props} />
     </StyledPanel>
