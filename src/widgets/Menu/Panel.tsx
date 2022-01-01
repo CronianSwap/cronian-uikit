@@ -4,6 +4,7 @@ import PanelBody from "./PanelBody";
 import PanelFooter from "./PanelFooter";
 import { SIDEBAR_WIDTH_REDUCED, SIDEBAR_WIDTH_FULL } from "./config";
 import { PanelProps, PushedProps } from "./types";
+import { Image } from "../../components/Image";
 
 interface Props extends PanelProps, PushedProps {
   showMenu: boolean;
@@ -39,6 +40,9 @@ const Panel: React.FC<Props> = (props) => {
     <StyledPanel isPushed={isPushed} showMenu={showMenu}>
 
       <PanelBody {...props} />
+      <a href="https://rugdoc.io/project/cronianswap/">
+        <Image src="https://cronianswap.com/images/LowRisk.png" width={370} height={121} responsive alt="RugDocReview" />
+      </a>
       <PanelFooter {...props} />
     </StyledPanel>
   );
