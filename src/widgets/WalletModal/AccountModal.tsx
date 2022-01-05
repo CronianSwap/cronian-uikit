@@ -24,7 +24,7 @@ const AccountModal: React.FC<Props> = ({ account, logout, onDismiss = () => null
     </Text>
     <Flex mb="32px">
       <LinkExternal small href={`https://cronos.crypto.org/explorer/address/${account}`} mr="16px">
-        View on BscScan
+        View on Cronos Explorer
       </LinkExternal>
       <CopyToClipboard toCopy={account}>Copy Address</CopyToClipboard>
     </Flex>
